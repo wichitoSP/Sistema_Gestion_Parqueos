@@ -11,7 +11,7 @@ public interface VehiculoDao {
     void actualizar(VheiculoModel vheiculoModel);
     void eliminar(int id);
     List<VheiculoModel> listaTodos();
-    
+
 
 
 }
