@@ -6,7 +6,7 @@ public interface ParqueoDao {
 
     void crear(ParqueoModel parqueoModel);
     ParqueoModel leer (int id);
-    
+
 
 
 }
