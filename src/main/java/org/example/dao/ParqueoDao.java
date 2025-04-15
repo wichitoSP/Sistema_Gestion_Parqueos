@@ -11,7 +11,7 @@ public interface ParqueoDao {
     void actualizar(ParqueoModel parqueoModel);
     void eliminar(int id);
     List<ParqueoModel> listaTodos();
-    
+
 
 
 
