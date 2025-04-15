@@ -2,6 +2,7 @@ package org.example.model;
 
 public class TarifaModel {
 
+    private int id;
     private String tipoVheiculo;
     private double precioHora;
     private double precioDia;
@@ -9,10 +10,19 @@ public class TarifaModel {
     public TarifaModel() {
     }
 
-    public TarifaModel(String tipoVheiculo, double precioHora, double precioDia) {
+    public TarifaModel(int id, String tipoVheiculo, double precioHora, double precioDia) {
+        this.id = id;
         this.tipoVheiculo = tipoVheiculo;
         this.precioHora = precioHora;
         this.precioDia = precioDia;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTipoVheiculo() {

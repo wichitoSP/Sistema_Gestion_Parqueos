@@ -34,8 +34,6 @@ public class VehiculoDaoImpl implements VehiculoDao {
 
         }
 
-
-
     }
 
     @Override
