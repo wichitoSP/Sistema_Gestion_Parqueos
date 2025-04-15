@@ -8,17 +8,17 @@ import java.util.List;
 
 public class VehiculoDaoImpl implements VehiculoDao {
 
-    private List<VheiculoModel> vehiculos;
+    private List<VheiculoModel> vehiculo;
 
     @Override
     public void crear(VheiculoModel vheiculoModel) {
-        vehiculos.add(vheiculoModel);
+        vehiculo.add(vheiculoModel);
 
     }
 
     @Override
     public VheiculoModel leer(int id) {
-        return vehiculos.stream()
+        return vehiculo.stream()
                 .filter(c -> c.getId() == id)
                 .findFirst()
                 .orElse(null);
@@ -39,12 +39,12 @@ public class VehiculoDaoImpl implements VehiculoDao {
     @Override
     public void eliminar(int id) {
 
-        vehiculos.removeIf(c -> c.getId()== id);
+        vehiculo.removeIf(c -> c.getId()== id);
 
     }
 
     @Override
     public List<VheiculoModel> listaTodos() {
-        return new ArrayList<>(vehiculos);
+        return new ArrayList<>(vehiculo);
     }
 }

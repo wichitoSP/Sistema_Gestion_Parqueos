@@ -59,4 +59,8 @@ public class VheiculoModel {
     public void setId(int id) {
         this.id = id;
     }
+    @Override
+    public String toString(){
+        return ("vehiculos {placa="+tipo+",marca = '"+marca+"color = '"+color+"id = '"+id);
+    }
 }
