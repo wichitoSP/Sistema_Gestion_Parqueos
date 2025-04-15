@@ -6,16 +6,18 @@ public class VheiculoModel {
     private String tipo;
     private String marca;
     private String color;
+    private  int id;
 
 
     public VheiculoModel() {
     }
 
-    public VheiculoModel(String placa, String tipo, String marca, String color) {
+    public VheiculoModel(String placa, String tipo, String marca, String color, int id) {
         this.placa = placa;
         this.tipo = tipo;
         this.marca = marca;
         this.color = color;
+        this.id = id;
     }
 
     public String getPlaca() {
@@ -48,5 +50,13 @@ public class VheiculoModel {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
